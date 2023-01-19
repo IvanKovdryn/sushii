@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="head">
+          <div class="head-img"><img src="./img/logo1.png" alt="logo" /></div>
+          <div class="head-title">Доставка роллів</div>
+          <div class="head-subtitle">Оперативно і смачно</div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="prod-wrapper">
+          <div class="products" id="products-container"></div>
+          <div class="cart">
+            <div class="cart-up">
+              <div class="cart-order">Ваш заказ</div>
+              <div class="cart-area"><span>Корзина пуста</span></div>
+              <div class="cart-wrapper"></div>
+              <div class="cart-delivery-wrapper">
+                <span class="cart-delivery">Доставка:</span>
+                <span class="cart-free">0</span>
+                <span class="cart-delivery-uah">грн</span>
+              </div>
+              <div class="hint">Безплатно при заказі від 800 грн</div>
+              <div class="cart-sum">
+                Загалом:
+                <span class="cart-sum-number">0</span>
+                <span class="cart-uah">грн</span>
+              </div>
+            </div>
+            <div class="cart-bottom none">
+              <div class="cart-make">Оформити заказ</div>
+              <input
+                class="cart-input"
+                type="text"
+                placeholder="Ваш номер телефону"
+              />
+              <button class="cart-btn">Заказати</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/renderProducts.js"></script>
+    <script src="./js/sumPriceCart.js"></script>
+    <script src="./js/toggleCartStatus.js"></script>
+    <script src="./js/changeCountNumber.js"></script>
+    <script src="./js/addInCart.js"></script>
+  </body>
+</html>
